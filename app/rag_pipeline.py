@@ -10,6 +10,9 @@ TOP_K = 3
 
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
+# Connect from Docker container to Ollama running on the Windows host
+ollama_client = ollama.Client(host="http://host.docker.internal:11434")
+
 
 def get_collection():
 # Connect to the local ChromaDB vector database and return the document collection.
@@ -66,7 +69,7 @@ Question:
 {query}
 """
 
-    response = ollama.chat(
+    response = ollama_client.chat(
         model="llama3",
         messages=[{"role": "user", "content": prompt}]
     )
