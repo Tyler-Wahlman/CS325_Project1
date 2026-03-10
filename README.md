@@ -62,31 +62,6 @@ CLI Response
 
 ---
 
-## Project Structure
-
-
-CS325_Project1
-|
-|-- Dockerfile
-|-- requirements.txt
-|-- README.md
-|-- .gitignore
-|
-|-- data
-| |-- core_rules.pdf
-| |-- world_lore.pdf
-| |-- monster_bestiary.docx
-| |-- magic_and_spells.docx
-| |-- equipment_items.txt
-|
-|-- app
-  |-- main.py
-  |-- ingest.py
-  |-- rag_pipeline.py
-
-
----
-
 ## Document Ingestion
 
 The ingestion system loads documents from the `data` folder.
@@ -289,6 +264,6 @@ Potential enhancements include:
 
 ## Author
 
-CS325 – Project 1  
+CS325 - Project 1  
 Tyler Wahlman
 Retrieval-Augmented Generation Assistant
