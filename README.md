@@ -10,14 +10,14 @@ The assistant supports PDF, DOCX, and TXT documents and runs entirely locally us
 
 ## Features
 
-- Supports **PDF, DOCX, and TXT** document ingestion
-- Automatic **text chunking**
-- **Semantic embeddings** using SentenceTransformers
-- **Vector storage** using ChromaDB
-- **Local LLM generation** using Ollama (Llama3)
-- **Source citation** for answers
-- Simple **command line interface**
-- Fully **containerized with Docker**
+- Supports PDF, DOCX, and TXT document ingestion
+- Automatic text chunking
+- Semantic embeddings using SentenceTransformers
+- Vector storage using ChromaDB
+- Local LLM generation using Ollama (Llama3)
+- Source citation for answers
+- Simple command line interface
+- Fully containerized with Docker
 
 ---
 
@@ -160,7 +160,7 @@ Model used:
 llama3
 
 
-The prompt instructs the model to answer **only using the retrieved context** to prevent hallucinated responses.
+The prompt instructs the model to answer only using the retrieved context to prevent hallucinated responses.
 
 Example prompt:
 
@@ -239,7 +239,7 @@ world_lore.pdf (page 1)
 
 ## Preventing Hallucinations
 
-The prompt used for generation requires the model to answer **only from retrieved context**. If the information cannot be found in the documents, the assistant responds:
+The prompt used for generation requires the model to answer only from retrieved context. If the information cannot be found in the documents, the assistant responds:
 
 
 I could not find that information in the documents.
