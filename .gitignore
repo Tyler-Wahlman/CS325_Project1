@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vector database
+chroma_db/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
